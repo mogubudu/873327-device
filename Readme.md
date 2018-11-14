@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Vladislav Pipkin](https://up.htmlacademy.ru/htmlcss/23/user/873327).
-* Наставник: `Неизвестно`.
+* Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633).
 
 ---
 
