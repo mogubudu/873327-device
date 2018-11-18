@@ -1,0 +1,20 @@
+/*Можно же подключить с помощью одного фонт фэйса?*/
+
+@font-face {
+	font-family: "gilroy bold";
+	src: url(../fonts/gilroyextrabold.woff2) format("woff2"),
+			url(../fonts/gilroyextrabold.woff) format("woff");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "gilroy";
+	src: url(../fonts/gilroy.woff2) format("woff2"),
+			url(../fonts/gilroy.woff) format("woff");
+	font-weight: normal;
+}
+
+.logo {
+	font-family: "gilroy bold";
+	text-transform: uppercase;
+}

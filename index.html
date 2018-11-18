@@ -3,10 +3,166 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
+  	<header class="main-header">
+  		<div class="logo">device</div>
+  		<form action="#">
+  			<input type="search" name="main-search" id="search" placeholder="Поиск по сайту">
+  		</form>
+  		<ul class="user-navigation">
+  			<li><a href="login.html">Войти</a></li>
+  		</ul>
+  		<ul class="cart-block">
+  			<li><a>Сравнить</a></li>
+  			<li><a href="cart.html">Корзина</a></li>
+  			<!-- пока в сравнении пусто - ссылка не должна быть активной -->
+  		</ul>
+  		<nav class="main-navigation">
+  			<ul class="main-category-navigation">
+  				<li><a>Каталог товаров</a> <!-- Меню должно открываться по щелчку на ссылку, сделать с помощью button? -->
+					<ul class="main-category-navigation-hidden">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+					</ul>
+  				</li>
+  				<!-- выше не очень понимаю как делать здесь меню, предполагаю что можно как-нибудь сделать такой порядок с помощью флексов. -->
+  			</ul>
+			<ul class="main-service-navigation">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+  		</nav>
+  	</header>
+  	<main class="container">
+  		<h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
+  		<section class="main-slider">
+  			<h2 class="visually-hidden">Популярные предложения</h2>
+  			<!-- здесь будет этот дикий слайдер -->
+  		</section>
+  		<section class="navigation-block">
+  			<h2 class="visually-hidden">
+  				Категории товаров
+  			</h2>
+  			<ul> <!-- В этом списке подумал, что оставлять пустой ссылку не очень круто, поэтому добавил подписи, чтобы потом убрать их через font-size: 0. Width и height не заполнял, так как не понимаю как узнать размер блока :) -->
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Виртуальная реальность">Виртуальная реальность
+  					</a>
+  					<a href="#"><h3>Виртуальная реальность</h3></a>
+  				</li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Моноподы для селфи">Моноподы для селфи
+  					</a>
+  					<a href="#"><h3>Моноподы для селфи</h3></a>
+  				</li>
 
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Экшн-камеры">Экшн-камеры
+  					</a>
+  					<a href="#"><h3>Экшн-камеры</h3></a>
+  				</li>
+
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Фитнес-браслеты">Фитнес-браслеты
+  					</a>
+  					<a href="#"><h3>Фитнес-браслеты</h3></a>
+  				</li>
+
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Умные часы">Умные часы
+  					</a>
+  					<a href="#"><h3>Умные часы</h3></a>
+  				</li>
+
+  				<li>
+  					<a href="#">
+  						<img src="#" alt="Категория Квадрокоптеры">Квадрокоптеры
+  					</a>
+  					<a href="#"><h3>Квадрокоптеры</h3></a>
+  				</li>
+  			</ul> 
+  		</section>
+
+		<section class="service-slider">
+			<h2 class="visually-hidden">Наши услуги и гарантии</h2>
+			<!-- здесь будет блок со слайдером -->
+		</section>
+
+		<section class="manufacturers">
+			<h2 class="visually-hidden">Производители гаджетов</h2>
+			<ul> <!-- аналогичная ситуация с изображениями -->
+				<li><img src="#" alt="dji"></li>
+				<li><img src="#" alt="sp gadjets"></li>
+				<li><img src="#" alt="gopro"></li>
+				<li><img src="#" alt="vive"></li>
+			</ul>
+		</section>
+		<section class="about-us">
+			<h2>О нас</h2>
+			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+			<ul>
+				<li>Деловые линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
+			</ul>
+			<p>
+				<a href="#" class="button">Подробнее о нас</a>
+			</p>
+		</section>
+
+		<section class="contacts">
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+
+			<a class="map" onclick="modal">
+				<img src="#" alt="Мы находимся по адресу: г.Москва, улица Строителей, 15">
+			</a>
+			<p>
+				<button class="button">Напишите нам</button>
+			</p>
+		</section>
+  	</main>
+  	<footer class="main-footer">
+  		<div class="logo-footer">device</div>
+  		<div class="user-navigation-footer">
+  			<ul>
+  				<li><a href="login.html">Войти</a></li>
+  				<li><a>Сравнить</a></li>
+  				<li><a href="#">Корзина</a></li>
+  			</ul>
+  		</div>
+
+		<span class="footer-address">г. Москва, ул. Строителей</span>
+		<div class="service-navigation-footer">
+			<a href="#">Доставка</a>
+			<a href="#">Гарантия</a>
+			<a href="#">Контакты</a>
+		</div>
+		<span class="phone-number-footer">Тел.: +7 (495) 495-95-95</span>
+
+		<ul class="footer-social">
+			<li><a class="footer-social-link" href="#">Facebook</a></li>
+			<li><a class="footer-social-link" href="#">Instagram</a></li>
+			<li><a class="footer-social-link" href="#">Twitter</a></li>
+		</ul>
+
+		<p class="footer-copyright">
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">HTML Academy</a> <!-- здесь изображение сделаем фоном -->
+		</p>
+  	</footer>
   </body>
 </html>

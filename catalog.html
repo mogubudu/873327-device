@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Страница каталога "Девайс"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  	<header class="main-header">
+  		<div class="logo">device</div>
+  		<form action="#">
+  			<input type="search" name="main-search" id="search" placeholder="Поиск по сайту">
+  		</form>
+  		<ul class="user-navigation">
+  			<li class="user-account"><a href="account.html">Валентин Петухов</a></li>
+  			<li><a href="logout.html">Выйти</a></li>
+  		</ul>
+  		<ul class="cart-block">
+  			<li><a>Сравнить</a></li>
+  			<li><a href="cart.html">Корзина</a></li>
+  			<!-- пока в сравнении пусто - ссылка не должна быть активной -->
+  		</ul>
+  		<nav class="main-navigation">
+  			<ul class="main-category-navigation">
+  				<li><a>Каталог товаров</a> <!-- Меню должно открываться по щелчку на ссылку, сделать с помощью button? -->
+					<ul class="main-category-navigation-hidden">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+					</ul>
+  				</li>
+  				<!-- выше не очень понимаю как делать здесь меню, предполагаю что можно как-нибудь сделать такой порядок с помощью флексов. -->
+  			</ul>
+			<ul class="main-service-navigation">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+  		</nav>
+  	</header>
+  	<main class="container">
+  		<h1 class="page-title">Моноподы для селфи</h1>
+  		<ul class="breadcrums">
+  			<li><a href="index.html">Главная</a></li>
+  			<li><a href="catalog.html">Каталог товаров</a></li>
+  			<li class="breadcrums-current">Моноподы для селфи</li>
+  		</ul>
+  		<section class="catalog-filter">
+  			<h2 class="visually-hidden">Фильтр товаров</h2>
+  			<!-- здесь будут фильтры для товаров -->
+  			<button class="button">Показать</button>
+  		</section>
+
+  		<section class="catalog">
+  			<h2 class="visually-hidden">Список гаджетов</h2>
+  			<ul class="products-list">
+  				<li class="product-item">
+  					<a href="catalog-item.html">
+  						<img src="monopod-1.jpg" width="720" height="734" alt="Фото любительской селфи-палки">
+  					</a>
+  					<div>
+  						<a href="catalog-item.html">
+  							<h3 class="product-item-title">Любительская селфи палка</h3>
+  						</a>
+  						<span class="product-item-price">500 руб.</span>
+  					</div>
+  				</li>
+  				<li class="product-item">
+  					<a href="catalog-item.html">
+  						<img src="monopod-2.jpg" width="720" height="734" alt="Фото профессиональной селфи-палки">
+  					</a>
+  					<div>
+  						<a href="catalog-item.html">
+  							<h3 class="product-item-title">Профессиональная селфи-палка</h3>
+  						</a>
+  						<span class="product-item-price">1 500 руб.</span>
+  					</div>
+  				</li>
+  				<li class="product-item">
+  					<a href="catalog-item.html">
+  						<img src="monopod.jpg" width="720" height="734" alt="Фото непотопляемой селфи-палки">
+  					</a>
+  					<div>
+  						<a href="catalog-item.html">
+  							<h3 class="product-item-title">Непотопляемая селфи-палка</h3>
+  						</a>
+  						<span class="product-item-price">2 500 руб.</span>
+  					</div>
+  				</li>
+  				<li class="product-item">
+  					<a href="catalog-item.html">
+  						<img src="monopod.jpg" width="720" height="734" alt="Фото селфи палки следуй за мной">
+  					</a>
+  					<div>
+  						<a href="catalog-item.html">
+  							<h3 class="product-item-title">Селфи-палка "Следуй за мной"</h3>
+  						</a>
+  						<span class="product-item-price">500 руб.</span>
+  					</div>
+  				</li>
+  			</ul>
+  			<div class="pagination">
+  				<!-- здесь будет пагинация -->
+  			</div>
+  		</section>
+  	</main>
+  	<footer class="main-footer">
+  		<div class="logo-footer">device</div>
+  		<div class="user-navigation-footer">
+  			<ul>
+  				<li class="user-account">
+  					<a href="account.html">Валентин Петухов</a>
+  				</li>
+  				<li>
+  					<a href="logout.html">Выйти</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="cart-block-footer">
+  			  	<ul>
+	  			  	<li><a>Сравнить</a></li>
+	  				<li><a href="#">Корзина</a></li>
+  				</ul>
+  		</div>
+
+		<span class="footer-address">г. Москва, ул. Строителей</span>
+		<div class="service-navigation-footer">
+			<a href="#">Доставка</a>
+			<a href="#">Гарантия</a>
+			<a href="#">Контакты</a>
+		</div>
+		<span class="phone-number-footer">Тел.: +7 (495) 495-95-95</span>
+
+		<ul class="footer-social">
+			<li><a class="footer-social-link" href="#">Facebook</a></li>
+			<li><a class="footer-social-link" href="#">Instagram</a></li>
+			<li><a class="footer-social-link" href="#">Twitter</a></li>
+		</ul>
+
+		<p class="footer-copyright">
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">HTML Academy</a> <!-- здесь изображение сделаем фоном -->
+		</p>
+  	</footer>
+</body>
+</html>
