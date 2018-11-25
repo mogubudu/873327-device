@@ -11,7 +11,8 @@
   		<div class="logo">
         <img src="img/logo.svg" width="196" height="17" alt="Логотип Девайса">
       </div>
-  		<form action="#">
+  		<form action="https://echo.htmlacademy.ru" class="form-search" method="post">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
   			<input type="search" name="main-search" id="search" placeholder="Поиск по сайту">
   		</form>
   		<ul class="user-navigation">
@@ -57,59 +58,54 @@
   				<li>
   					<a href="#">
   						<img src="img/popular-1.svg" alt="Категория Виртуальная реальность">
-  					</a>
-  					<a href="#"><h3>Виртуальная реальность</h3></a>
+              <h3>Виртуальная реальность</h3>
+            </a>
   				</li>
-
   				<li>
   					<a href="#">
   						<img src="img/popular-2.svg" alt="Категория Моноподы для селфи">
-  					</a>
-  					<a href="#"><h3>Моноподы для селфи</h3></a>
-  				</li>
-
+              <h3>Моноподы для селфи</h3>
+            </a>
+          </li>
   				<li>
   					<a href="#">
   						<img src="img/popular-3.svg" alt="Категория Экшн-камеры">
-  					</a>
-  					<a href="#"><h3>Экшн-камеры</h3></a>
+              <h3>Экшн-камеры</h3>
+            </a>
   				</li>
-
   				<li>
   					<a href="#">
   						<img src="img/popular-4.svg" alt="Категория Фитнес-браслеты">
-  					</a>
-  					<a href="#"><h3>Фитнес-браслеты</h3></a>
+              <h3>Фитнес-браслеты</h3>
+            </a>
   				</li>
-
   				<li>
   					<a href="#">
   						<img src="img/popular-5.svg" alt="Категория Умные часы">
-  					</a>
-  					<a href="#"><h3>Умные часы</h3></a>
+              <h3>Умные часы</h3>
+            </a>
   				</li>
-
   				<li>
   					<a href="#">
   						<img src="img/popular-6.svg" alt="Категория Квадрокоптеры">
-  					</a>
-  					<a href="#"><h3>Квадрокоптеры</h3></a>
+              <h3>Квадрокоптеры</h3>
+            </a>
   				</li>
   			</ul> 
   		</section>
 
 		<section class="service-slider">
 			<h2 class="visually-hidden">Наши услуги и гарантии</h2>
-			<!-- здесь будет блок со слайдером -->
+			<!-- здесь будет блок с табами -->
 		</section>
 
 		<section class="manufacturers">
 			<h2 class="visually-hidden">Производители гаджетов</h2>
-			<ul> <!-- аналогичная ситуация с изображениями -->
-				<li><img src="img/logo-1.png" alt="dji"></li>
-				<li><img src="img/logo-2.png" alt="sp gadjets"></li>
-				<li><img src="img/logo-3.png" alt="gopro"></li>
-				<li><img src="img/logo-4.png" alt="vive"></li>
+			<ul>
+				<li><img src="img/logo-1.png" width="260" height="100" alt="dji"></li>
+				<li><img src="img/logo-2.png" width="260" height="100" alt="sp gadjets"></li>
+				<li><img src="img/logo-3.png" width="260" height="100" alt="gopro"></li>
+				<li><img src="img/logo-4.png" width="260" height="100" alt="vive"></li>
 			</ul>
 		</section>
 		<section class="about-us">
@@ -166,5 +162,31 @@
 			<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link"><img src="img/logo-html.svg" alt="Разработано в HTML Academy">HTML Academy</a>
 		</p>
   	</footer>
+    <section class="modal modal-form">
+      <h2 class="visually-hidden">
+        Форма обратной связи
+      </h2>
+        <form action="https://echo.htmlacademy.ru" class="mail-form" method="get">
+          <label for="modal-name">Ваше имя</label>
+          <input type="text" class="modal-name-input" id="modal-name" placeholder="Имя Фамилия">
+          <label for="modal-email">Ваш e-mail</label>
+          <input type="email" class="modal-email-input" id="modal-email" placeholder="email@example.com">
+          <label>
+            Текст письма
+            <input type="text" class="modal-comment-input" placeholder="В свободной форме">
+          </label>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+        <button class="modal-close">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="560" height="222" alt="Офис по адресу: г.Москва, улица Строителей, дом 15">
+      </p>
+      <button class="modal-close">Закрыть</button>
+    </section>
+
   </body>
 </html>
