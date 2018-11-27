@@ -7,7 +7,118 @@
 
 @font-face {
 	font-family: "Gilroy";
-	src: url(../fonts/gilroy.woff2) format("woff2"),
-			url(../fonts/gilroy.woff) format("woff");
+	src: url(../fonts/gilroylight.woff2) format("woff2"),
+			url(../fonts/gilroylight.woff) format("woff");
+	font-weight: lighter;
+}
+/* 
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/opensans.woff2) format("woff2"),
+			url(../fonts/opensans.woff) format("woff");
 	font-weight: normal;
+}
+ */
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/opensanslight.woff2) format("woff2"),
+			url(../fonts/opensanslight.woff) format("woff");
+	font-weight: 100;
+}
+
+body {
+	max-width: 1300px;
+	margin: 0 auto;
+	background: #fff;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #000;
+}
+.visually-hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #484337;
+}
+
+a:active {
+	color: #b8a974;
+}
+
+.main-header {
+	background: #f7e296;
+}
+
+.main-header ul {
+	list-style: none;
+}
+
+.logo {
+	background: linear-gradient(#fff 43%, #f7e296 0%);
+	padding: 0 57px;
+}
+
+.form-search input[type="search"] {
+	background: inherit;
+
+	font: inherit;
+	color: #000;
+
+	border: none;
+	opacity: 0.7;
+}
+.form-search input[type="search"]:hover {
+	opacity: 0.9;
+}
+
+.form-search input[type="search"]:focus {
+	opacity: 1;
+	color: #000;
+	outline: none;
+	border-bottom: 2px solid #000;
+}
+
+.main-category-navigation button {
+	border: none;
+	background: inherit;
+
+	font: bold 18px/24px "Gilroy";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.main-category-navigation button:hover {
+	color: #484337;
+	cursor: pointer;
+}
+
+.main-navigation .button-menu {
+	width: 16px;
+	height: 16px;
+
+	border: none;
+	background: url("../img/plus.svg") no-repeat;
+	
+	font-size: 0;
+	color: #b8a974;
+}
+
+.main-service-navigation a {
+	font: bold 18px/24px "Gilroy";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.navigation-block ul {
+	font: bold 18px/24px "Gilroy";
+	list-style: none;
+}
+.manufacturers ul {
+	list-style: none;
 }
