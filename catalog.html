@@ -59,7 +59,7 @@
 			<li class="breadcrums-current"><a>Моноподы для селфи</a></li>
 		</ul>
 		<section class="catalog-filter">
-			<h2>Фильтр</h2>
+			<h2>Фильтр:</h2>
 			<form action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Стоимость</legend>
@@ -111,20 +111,24 @@
 		</section>
 
 		<section class="product-sort">
-			<h2>Сортировка</h2>
-				<form action="https://echo.htmlacademy.ru" class="form-sort">
-					<input type="radio" class="visually-hidden sort-input-radio" name="sort" id="sort-price" value="sorting-by-price" checked>
-					<label for="sort-price">По цене</label>
-					<input type="radio" class="visually-hidden sort-input-radio" name="sort" id="sort-type" value="sorting-by-type">
-					<label for="sort-type">По типу</label>
-					<input type="radio" class="visually-hidden sort-input-radio" name="sort" id="sort-popular" value="sorting-by-popularity">
-					<label for="sort-popular">По популярности</label>
-					<p>
-						<button>ASC</button>
-						<button>DESC</button>
-						<!-- в этой форме пока что совсем не понимаю как и что работает -->
-					</p>
-				</form>
+			<h2>Сортировка:</h2>
+			<ul class="sort-list">
+				<li class="sort-item active">
+					<a href="#">По цене</a>
+				</li>
+				<li class="sort-item">
+					<a href="#">По типу</a>
+				</li>
+				<li>
+					<a href="sort-item">По популярности</a>
+				</li>
+			</ul>
+
+			<ul class="indicator-list">
+				<li class="indicator-item-up">Цена по возрастанию</li>
+				<li class="indicator-item-down active">Цена по убыванию</li>
+			</ul>
+			<!-- Подпись скроем у li скроем. Или они вообще не нужны тут? -->
 		</section>
 
 		<section class="catalog">
