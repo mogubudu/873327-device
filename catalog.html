@@ -27,8 +27,9 @@
 			<!-- пока в сравнении пусто - ссылка не должна быть активной -->
 		</ul>
   		<nav class="main-navigation">
+  			<button>Каталог товаров</button>
   			<ul class="main-category-navigation">
-  				<li><button>Каталог товаров</button>
+  				<li>
 					<ul class="main-category-navigation-hidden">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="#">Моноподы для селфи</a></li>
@@ -119,8 +120,8 @@
 				<li class="sort-item">
 					<a href="#">По типу</a>
 				</li>
-				<li>
-					<a href="sort-item">По популярности</a>
+				<li class="sort-item">
+					<a href="#">По популярности</a>
 				</li>
 			</ul>
 
@@ -173,16 +174,24 @@
 			</ul>
 			<div class="pagination">
 				<p>
-					<button class="button-prev">Назад</button>
 				</p>
 					<ul class="pagination-list">
-						<li class="pagination-item pagination-item-current">1</li>
-						<li class="pagination-item">2</li>
-						<li class="pagination-item">3</li>
+						<li>
+							<button class="button-prev">Назад</button>
+						</li>
+						<li class="pagination-item pagination-item-current">
+						1
+						</li>
+						<li class="pagination-item">
+						2
+						</li>
+						<li class="pagination-item">
+						3
+						</li>
+						<li>
+						<button class="button-next">Вперед</button>
+						</li>
 					</ul>
-				<p>
-					<button class="button-next">Вперед</button>
-				</p>
 			</div>
 		</section>
 	</main>
@@ -200,13 +209,17 @@
 		  </ul>
 		</div>
 
-	 <span class="footer-address">г. Москва, ул. Строителей</span>
+	 <p class="footer-address">
+	 г. Москва, ул. Строителей
+	</p>
 	 <div class="service-navigation-footer">
 		<a href="#">Доставка</a>
 		<a href="#">Гарантия</a>
 		<a href="#">Контакты</a>
 	 </div>
-	 <span class="phone-number-footer">Тел.: +7 (495) 495-95-95</span>
+	 <p class="phone-number-footer">
+	 Тел.: +7 (495) 495-95-95
+	</p>
 
 	 <ul class="footer-social">
 		<li><a class="footer-social-link" href="#"><img src="img/fb.svg" alt="Мы в Facebook">Facebook</a></li>
