@@ -57,7 +57,80 @@
 			<h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
 			<section class="main-slider">
 				<h2 class="visually-hidden">Популярные предложения</h2>
-				<!-- здесь будет этот дикий слайдер -->
+				
+				<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+				<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+				<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+				<div class="slider-controls">
+					<label for="product-1" class="slider-controls-item slider-controls-item--1">Первый слайдер</label>
+					<label for="product-2" class="slider-controls-item slider-controls-item--2">Второй слайдер</label>
+					<label for="product-3" class="slider-controls-item slider-controls-item--3">Третий слайдер</label>
+				</div>
+					
+				<ul class="slider-list">
+					<li class="slider-item">
+						<div class="slider-item-content">
+							<h3>Делай селфи,<br> как Бен Стиллер!</h3>
+							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метрой длиной и весом всего 5 килограмм.</p>
+							<a href="#" class="button">Подробнее</a>
+							<table>
+								<tbody>
+								<tr>
+									<th>Длина палки</th>
+									<th>Вес палки</th>
+									<th>Материал</th>
+								</tr>
+								<tr>
+									<td>8,5 м</td>
+									<td>5 кг</td>
+									<td>Карбон</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="slider-item">
+						<div class="slider-item-content">
+							<h3>Худеем<br> правильно!</h3>
+							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a href="#" class="button">Подробнее</a>
+							<table>
+								<tbody>
+								<tr>
+									<th>Без подзарядки</th>
+								</tr>
+								<tr>
+									<td>48 часов</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="slider-item">
+						<div class="slider-item-content">
+							<h3>Порхает как бабочка, жалит как пчела!</h3>
+							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<a href="#" class="button">Подробнее</a>
+						<table>
+							<tbody>
+							<tr>
+								<th>Дальность полета</th>
+								<th>Радиус поражения</th>
+							</tr>
+							<tr>
+								<td>800 м</td>
+								<td>50 м</td>
+							</tr>
+							</tbody>
+						</table>
+						</div>
+					</li>
+				
+				</ul>
+
+
+
 			</section>
 			<section class="navigation-block">
 				<h2 class="visually-hidden">
@@ -100,15 +173,34 @@
 		<div class="service-wrapper">
 		<section class="service-slider container">
 			<h2 class="visually-hidden">Наши услуги и гарантии</h2>
+
+			<!-- Отвратительный блок, не пройдет тест на переполнение текстом. Надо переделать -->
 			<ul class="service-list">
-				<li><a href="#" class="button-service">Доставка</a></li>
-				<li><a href="#" class="button-service">Гарантия</a></li>
-				<li><a href="#" class="button-service">Кредит</a></li>
+				<li>
+					<input type="radio" name="tabs" id="delivery-tab" checked>
+					<label for="delivery-tab">Доставка</label>
+					<section class="service-description service-delivery">
+						<h3>Доставка</h3>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</section>
+				</li>
+				<li>
+					<input type="radio" name="tabs" id="warranty-tab">
+					<label for="warranty-tab">Гарантия</label>
+					<section class="service-description service-warranty">
+							<h3>Гарантия</h3>
+							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					</section>
+				</li>
+				<li>
+					<input type="radio" name="tabs" id="credit-tab">
+					<label for="credit-tab">Кредит</label>
+					<section class="service-description service-credit">
+							<h3>Кредит</h3>
+							<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</section>
+				</li>
 			</ul>
-			<div class="service-description service-delivery">
-				<h3>Доставка</h3>
-				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-			</div>
 		</section>
 	</div>
 	<div class="container">
@@ -211,9 +303,9 @@
 				</a>
 			 </p>
 	 </div>
+	</div>
 	 </footer>
 	</div>
-</div>
 
 		<section id="write-us" class="modal modal-form">
 			<h2 class="visually-hidden">
