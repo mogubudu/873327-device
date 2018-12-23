@@ -82,24 +82,35 @@ a:active {
 }
 .main-header ul {
 	list-style: none;
+
 }
 .logo {
 	background: linear-gradient(#fff 43%, #f7e296 0%);
 	padding: 0 57px;
+	margin-bottom: 35px;
 }
 .header-wrapper {
 	display: flex;
+	justify-content: center;
+	padding: 0 60px;
+	margin-bottom: 50px;
 }
 .header-wrapper form, .header-wrapper ul {
 	display: flex;
-	padding-left: 0;
+	margin: 0;
 }
+
+.header-wrapper form {
+	margin-right: auto;
+}
+
 .form-search {
 	position: relative;
-	margin-left: 95px;
+	padding-left: 32px;
 }
 .form-search input[type="search"] {
 	font: inherit;
+	line-height: 30px;
 	color: #000;
 
 	border: none;
@@ -111,8 +122,8 @@ a:active {
 	content: ""; 
 
 	position: absolute;
-	top: 23px;
-	left: -32px;
+	top: 10px;
+	left: 0px;
 
 	width: 16px;
 	height: 16px;
@@ -128,8 +139,8 @@ a:active {
 	outline: none;
 	box-shadow: 0 2px #000;
 }
-.user-navigation {
-	margin-left: 340px;
+.header-wrapper .user-navigation {
+	margin-left: 265px;
 }
 .login-link {
 	position: relative;
@@ -147,10 +158,35 @@ a:active {
 
 	background: url("../img/user.svg") no-repeat 0 0;
 }
-.cart-block {
-	margin-left: 210px;
-	width: 220px;
-	justify-content: space-between;
+
+.user-account {
+	position: relative;
+	padding-left: 30px;
+	margin-right: 20px;
+}
+
+.user-account::before {
+	content: "";
+
+	position: absolute;
+	left: 0;
+	top: 10px;
+	
+	width: 13px;
+	height: 12px;
+
+	background: url("../img/user.svg") no-repeat 0 0;
+}
+
+.logout-link {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-wrapper .cart-block {
+	margin-left: auto;
+}
+.cart-block li:not(:last-child) {
+	margin-right: 17px;
 }
 .compare-link {
 	position: relative;
@@ -204,16 +240,15 @@ a:active {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
-	padding-top: 9px;
+	padding: 0 60px;
 }
 
 .main-navigation button {
 	position: relative;
+	padding: 0;
 
 	border: none;
 	background: inherit;
-
-	padding-left: 57px;
 
 	font: bold 18px/24px "Gilroy";
 	text-transform: uppercase;
@@ -230,7 +265,7 @@ a:active {
 
 	position: absolute;
 	top: 4px;
-	right: -17px;
+	right: -30px;
 
 	width: 16px;
 	height: 16px;
@@ -243,9 +278,9 @@ a:active {
 }
 .main-service-navigation {
 	display: flex;
-	width: 500px;
-	padding-left: 0;
-	margin-left: 306px;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
 }
 .main-service-navigation li:nth-child(2) {
 	margin-left: 30px;
@@ -260,7 +295,9 @@ a:active {
 }
 .main-category-navigation {
 	width: 560px;
-	padding-left: 57px;
+	margin: 0;
+	padding: 0;
+	padding: 35px 0 40px;
 }
 .main-category-navigation-hidden {
 	padding-left: 0;
@@ -664,14 +701,31 @@ a:focus .navigation-block-item::before  {
 	padding-top: 65px;
 	padding-bottom: 65px;
 }
-.wrapper .container .footer-row:nth-of-type(2) {
-	padding-top: 25px;
-}
 .footer-row {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	color: #fff;
 }
+
+.footer-row:nth-of-type(2) {
+	padding-top: 25px;
+}
+
+.footer-row:last-child::before {
+	content: "";
+	position: absolute;
+
+	bottom: 0;
+	left: 0;
+
+	width: 80px;
+	height: 7px;
+
+	background-color: #ffc600;
+
+}
+
 .footer-row ul {
 	list-style: none;
 	margin: 0 auto;
@@ -690,16 +744,25 @@ a:focus .navigation-block-item::before  {
 .user-navigation-footer ul {
 	display: flex;
 	flex-wrap: wrap;
-	width: 330px;
 	justify-content: space-between;
 }
 .user-navigation-footer ul li:first-of-type {
 	padding-left: 25px;
 }
+.user-navigation-footer ul li:not(:first-of-type) {
+	margin-left: 19px;
+}
 .user-navigation-footer a {
 	font-size: 15px;
 	line-height: 36px;
 	color: rgba(255, 255, 255, 0.7);
+}
+.user-navigation-footer ul li.logout-link {
+	margin-right: 20px;
+	margin-left: 0;
+}
+.user-navigation-footer .logout-link a {
+	color: rgba(255, 255, 255, 0.3);
 }
 .user-navigation-footer a:hover,
 .user-navigation-footer a:focus {
@@ -748,6 +811,7 @@ a:focus .navigation-block-item::before  {
 .footer-social a, .footer-copyright a {
 	font-size: 0;
 	display: block;
+	line-height: 0;
 }
 .footer-social a:hover,
 .footer-social a:focus,
@@ -767,6 +831,8 @@ a:focus .navigation-block-item::before  {
 	position: absolute;
 }
 .modal:target {
+	position: fixed;
+	z-index: 999;
 	display: block;
 	top: 50%;
 	left: 50%;
@@ -1060,6 +1126,8 @@ a:focus .navigation-block-item::before  {
 	padding: 0;
 	
 	text-transform: uppercase;
+
+	cursor: pointer;
 }
 
 .pagination-list .pagination-item {
