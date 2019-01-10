@@ -16,12 +16,12 @@
 			<div class="header-wrapper">
 
 			<form action="https://echo.htmlacademy.ru" class="form-search" method="post">
-				<label for="search" class="visually-hidden">Поиск по сайту</label>
 				<input type="search" name="main-search" id="search" placeholder="Поиск по сайту">
+			<button type="submit" class="search-button">Найти</button>
 			</form>
 
   		<ul class="user-navigation">
-			<li class="user-account"><a href="account.html">Валентин Петухов</a></li>
+			<li><a class="user-account" href="account.html">Валентин Петухов</a></li>
 			<li><a class="logout-link" href="logout.html">Выйти</a></li>
   		</ul>
   		<ul class="cart-block">
@@ -30,13 +30,9 @@
   		</ul>
 			 
 			</div>
-			<nav class="main-navigation">
-				<button>Каталог товаров</button>
-				<ul class="main-service-navigation">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<nav class="main-navigation catalog-page">
+				<ul>
+				<li><a class="category-link" href="catalog.html">Каталог товаров</a>
 				<ul class="main-category-navigation">
 					<li>
 					<ul class="main-category-navigation-hidden">
@@ -52,6 +48,11 @@
 						<li><a href="#">Квадрокоптеры</a></li>
 					</ul>
 					</li>
+				</ul>
+			</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -118,7 +119,7 @@
 
 				<fieldset>
 					<legend>Цвет</legend>
-					<ul>
+					<ul class="color-option-list">
 						<li class="filter-option">
 							<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" id="filter-color-black" checked>
 							<label for="filter-color-black">Черный</label>
@@ -144,7 +145,7 @@
 
 				<fieldset>
 					<legend>Bluetooth</legend>
-					<ul>
+					<ul class="bluetooth-option-list">
 						<li class="filter-option">
 							<input type="radio" class="visually-hidden filter-input filter-input-radio" name="bluetooth" id="bluetooth-on" value="on" checked>
 							<label for="bluetooth-on">Есть</label>
@@ -163,16 +164,29 @@
 			<h2 class="visually-hidden">Список гаджетов</h2>
 			<ul class="product-list">
 				<li class="product-item">
+					<div class="product-image">
 						<img src="img/item-1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+					</div>
+					<p class="product-item-links">
+						<a href="#" class="button">В корзину</a>
+						<a href="#" class="product-compare-link">Добавить к сравнению</a>
+					</p>
 						<div>
 					<a href="catalog-item.html">
-							<h3 class="product-item-title">Любительская селфи палка</h3>
+							<h3 class="product-item-title">Любительская селфи-палка</h3>
 					</a>
 							<span class="product-item-price">500 руб.</span>
 						</div>
 				</li>
 				<li class="product-item">
+					<div class="product-image">
 						<img src="img/item-2.jpg" width="360" height="380" alt="Фото профессиональной селфи-палки">
+					</div>
+					<p class="product-item-links">
+						<a href="#" class="button">В корзину</a>
+						<a href="#" class="product-compare-link">Добавить к сравнению</a>
+					</p>
+
 						<div>
 					<a href="catalog-item.html">
 							<h3 class="product-item-title">Профессиональная <br>селфи-палка</h3>
@@ -181,21 +195,33 @@
 						</div>
 				</li>
 				<li class="product-item">
+					<div class="product-image">
 						<img src="img/item-3.jpg" width="360" height="380" alt="Фото непотопляемой селфи-палки">
-						<div>
+					</div>
+					<p class="product-item-links">
+						<a href="#" class="button">В корзину</a>
+						<a href="#" class="product-compare-link">Добавить к сравнению</a>
+					</p>
+					<div>
 					<a href="catalog-item.html">
 							<h3 class="product-item-title">Непотопляемая селфи-палка</h3>
 					</a>
 							<span class="product-item-price">2 500 руб.</span>
-						</div>
+					</div>
 				</li>
 				<li class="product-item">
+					<div class="product-image">
 						<img src="img/item-4.jpg" width="360" height="380" alt="Фото селфи палки следуй за мной">
+					</div>
+					<p class="product-item-links">
+						<a href="#" class="button">В корзину</a>
+						<a href="#" class="product-compare-link">Добавить к сравнению</a>
+					</p>
 						<div>
 					<a href="catalog-item.html">
-							<h3 class="product-item-title">Селфи-палка "Следуй за мной"</h3>
+							<h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
 					</a>
-							<span class="product-item-price">500 руб.</span>
+							<span class="product-item-price">4 500 руб.</span>
 						</div>
 				</li>
 			</ul>
@@ -233,7 +259,7 @@
 			</div>
 			<div class="user-navigation-footer">
 				<ul>
-				<li class="user-account login-link"><a href="account.html">Валентин Петухов</a></li>
+				<li><a class="login-link" href="account.html">Валентин Петухов</a></li>
 				 <li class="logout-link"><a href="logout.html">Выйти</a></li>
 				 <li><a class="compare-link" href="#">Сравнить</a></li>
 				 <li><a class="cart-link" href="#">Корзина</a></li>
@@ -242,7 +268,7 @@
 		</div>
 		<div class="footer-row">
 			 <p class="footer-address">
-			 г. Москва, ул. Строителей
+			 г. Москва, ул. Строителей, 15
 			</p>
 			 <div class="service-navigation-footer">
 					<a href="#">Доставка</a>
