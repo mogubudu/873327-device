@@ -45,4 +45,20 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
+var serviceButtons = Array.prototype.slice.call(document.querySelectorAll(".button-service"));
+var serviceSlider = document.querySelector(".service-slider");
+if (serviceSlider) {
+    var serviceSlides = serviceSlider.querySelectorAll(".service-item");
+    serviceButtons.forEach(function(button, i) {
+        button.addEventListener("click", function() {
+            for (var y = 0; y < serviceSlides.length; y++) {
+                serviceSlides[y].classList.remove("service-item-active");
+                serviceButtons[y].classList.remove("button-service-active")
+            }
+            this.classList.add("button-service-active");
+            serviceSlides[i].classList.add("service-item-active")
+        })
+    })
+}
+
 

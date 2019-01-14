@@ -461,7 +461,7 @@ input[type="search"]:focus + .search-button {
   border-radius: 50%;
 }
 .slider-item-content h3 {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	font-size: 47px;
 	line-height: 56px;
@@ -508,7 +508,7 @@ padding-left: 77px;
 }
 
 .slider-item-content td {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-size: 36px;
 	line-height: 48px;
 	padding-left: 75px;
@@ -526,7 +526,7 @@ padding-left: 77px;
 }
 
 .navigation-block ul {
-	font: 700 18px/24px "Gilroy";
+	font: 700 18px/24px "Gilroy","Helvetica",sans-serif;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -660,7 +660,8 @@ a:focus .navigation-block-item::before  {
 	width: 100%;
 	height: 100%;
 }
-.button-service-active:hover::before {
+.button-service-active:hover::before,
+.button-service:focus::before {
 	width: 280px;
 }
 
@@ -690,7 +691,7 @@ a:focus .navigation-block-item::before  {
 	margin: 0;
 	padding: 0;
 	font-size: 47px;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	line-height: 48px;
 	letter-spacing: 0.8px;
@@ -712,8 +713,8 @@ a:focus .navigation-block-item::before  {
 .service-warranty::after {
 	content: "";
 	position: absolute;
-	top: -15px;
-	right: -260px;
+	top: 0px;
+	right: 0px;
 	height: 194px;
 	width: 171px;
 	background: url("../img/warranty.svg") no-repeat 0 0;
@@ -721,8 +722,8 @@ a:focus .navigation-block-item::before  {
 .service-credit::after {
 	content: "";
 	position: absolute;
-	top: -25px;
-	right: -260px;
+	top: 0px;
+	right: 0px;
 	height: 186px;
 	width: 156px;
 	background: url("../img/credit.svg") no-repeat 0 0;
@@ -770,7 +771,7 @@ a:focus .navigation-block-item::before  {
 	padding-top: 93px;
 	font-size: 47px;
 	font-weight: 700;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	line-height: 48px;
 }
 .about-us h2::before,
@@ -795,7 +796,7 @@ a:focus .navigation-block-item::before  {
 	margin: 0;
 	font-size: 16px;
 	font-weight: 700;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	line-height: 40px;
 	list-style-position: inside;
 	list-style-type: circle;
@@ -807,23 +808,43 @@ a:focus .navigation-block-item::before  {
 .contacts p {
 	padding-bottom: 40px;
 }
-.contacts p:last-of-type {
-	padding-top: 67px;
-}
 .contacts .button {
 	padding: 10px 40px;
 }
 .contacts .map {
 	display: block;
+	position: relative;
+	margin-bottom: 27px;
 }
 
+.map iframe {
+	position: relative;
+	z-index: 1;
+	border: 0;
+}
+
+.contacts .map-overlay {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	opacity: 0;
+	top: 0;
+	position: absolute;
+	z-index: 4;
+	background-color: #fff;
+}
+
+.map img {
+	position: absolute;
+	top: 0;
+}
 .button {
 	border: none;
 	background-color: inherit;
 
 	padding: 10px 20px;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	
@@ -956,7 +977,7 @@ a:focus .navigation-block-item::before  {
 .service-navigation-footer a {
 	font-size: 18px;
 	line-height: 24px;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 4px;
@@ -1034,7 +1055,7 @@ a:focus .navigation-block-item::before  {
 .modal-form label {
 	font-size: 18px;
 	line-height: 24px;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 }
 .modal-form input {
@@ -1111,7 +1132,7 @@ a:focus .navigation-block-item::before  {
 }
 
 .page-title {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	font-size: 47px;
 	line-height: 48px;
@@ -1163,7 +1184,7 @@ a:focus .navigation-block-item::before  {
 }
 
 .catalog-wrapper h2 {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.7px;
@@ -1274,7 +1295,7 @@ a:focus .navigation-block-item::before  {
 	right: 27px;
 
 	text-transform: uppercase;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	text-align: center;
 	
@@ -1331,7 +1352,7 @@ a:focus .navigation-block-item::before  {
 }
 .product-item h3 {
 	width: 260px;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
@@ -1342,7 +1363,7 @@ a:focus .navigation-block-item::before  {
 .product-item-price {
 	margin-left: auto;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 100;
 	font-size: 16px;
 	line-height: 24px;
@@ -1374,7 +1395,7 @@ a:focus .navigation-block-item::before  {
 	margin-left: auto;
 }
 .pagination-list li {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
@@ -1384,7 +1405,7 @@ a:focus .navigation-block-item::before  {
 .pagination-list button {
 	border: 0;
 	background-color: inherit;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
@@ -1457,7 +1478,7 @@ a:focus .navigation-block-item::before  {
 }
 
 .catalog-filter legend {
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
@@ -1514,7 +1535,7 @@ a:focus .navigation-block-item::before  {
 
 .price-controls {
 	padding-top: 10px;
-	font-family: "Gilroy";
+	font-family: "Gilroy","Helvetica",sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 100;
