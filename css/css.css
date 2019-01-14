@@ -784,14 +784,23 @@ a:focus .navigation-block-item::before  {
 	height: 7px;
 	background-color: black;
 }
-.about-us p,
+.about-us p {
+	margin: 0;
+	padding-top: 43px;
+	letter-spacing: .1px;
+}
+.about-us p + p {
+	padding-top: 30px;
+	letter-spacing: -0.1px;
+}
+
 .contacts p {
 	margin: 0;
 	padding-top: 40px;
 }
 
 .about-us ul {
-	padding-top: 60px;
+	padding-top: 66px;
 	padding-left: 15px;
 	margin: 0;
 	font-size: 16px;
