@@ -1124,6 +1124,7 @@ a:focus .navigation-block-item::before  {
 .modal-map iframe {
 	z-index: 3;
 	position: relative;
+	border: 0;
 }
 .modal-map p {
 	padding: 0;
