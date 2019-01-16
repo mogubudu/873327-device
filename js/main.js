@@ -18,8 +18,8 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-	evt.preventDefault();
 	if (evt.keyCode === 27) {
+		evt.preventDefault();
 		if (mapPopup.classList.contains("modal-show")) {
 			mapPopup.classList.remove("modal-show");
 		}
@@ -37,8 +37,8 @@ writeusClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-	evt.preventDefault();
 	if (evt.keyCode === 27) {
+		evt.preventDefault();
 		if (writeusPopup.classList.contains("modal-show")) {
 			writeusPopup.classList.remove("modal-show");
 		}
@@ -59,6 +59,5 @@ if (serviceSlider) {
             serviceSlides[i].classList.add("service-item-active")
         })
     })
-}
-
+};
 
