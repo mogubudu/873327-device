@@ -1106,6 +1106,20 @@ a:focus .navigation-block-item::before  {
 	border: none;
 	background-color: rgba(229, 229, 229, 0.5);
 }
+
+.modal-form input:focus:not(:invalid) {
+	outline: 3px solid #f7e296;
+	border: none;
+	background-color: #ffffff;
+}
+
+.modal-form input:invalid {
+	background-color: #f6dada;
+}
+
+.modal-form input:hover {
+	background-color: rgba(229, 229, 229, 0.8);
+}
 .modal-form input[type="email"] {
 	margin-right: 0;
 }
@@ -1126,6 +1140,16 @@ a:focus .navigation-block-item::before  {
 
 	border: none;
 }
+.modal-form .modal-comment-input:hover {
+	background-color: rgba(229, 229, 229, 0.8);
+}
+
+.modal-form .modal-comment-input:focus {
+	outline: 3px solid #f7e296;
+	border: none;
+	background-color: #ffffff;
+}
+
 .modal-form button {
 	margin-right: auto;
 	margin-top: 45px;
@@ -1143,6 +1167,15 @@ a:focus .navigation-block-item::before  {
 	cursor: pointer;
 	z-index: 4;
 }
+.modal-close:hover,
+.modal-close:focus {
+	opacity: 1;
+}
+
+.modal-close:active {
+	opacity: 0.3;
+}
+
 .modal-map {
 	width: 960px;
 }
