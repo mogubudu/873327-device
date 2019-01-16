@@ -32,7 +32,8 @@
 			</div>
 			<nav class="main-navigation catalog-page">
 				<ul>
-				<li><a class="category-link" href="#">Каталог товаров</a>
+				<li class="main-navigation-first-item">
+					<a class="category-link" href="#">Каталог товаров</a>
 				<ul class="main-category-navigation">
 					<li>
 					<ul class="main-category-navigation-hidden">
@@ -50,9 +51,15 @@
 					</li>
 				</ul>
 			</li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li>
+						<a class="main-menu-link" href="#">Доставка</a>
+					</li>
+					<li>
+						<a class="main-menu-link" href="#">Гарантия</a>
+					</li>
+					<li class="main-navigation-last-item">
+						<a class="main-menu-link" href="#">Контакты</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -73,8 +80,8 @@
 		<section class="product-sort">
 			<h2>Сортировка:</h2>
 			<ul class="sort-list">
-				<li class="sort-item active">
-					<a href="#">По цене</a>
+				<li class="sort-item">
+					<a class="active" href="#">По цене</a>
 				</li>
 				<li class="sort-item">
 					<a href="#">По типу</a>
@@ -227,20 +234,20 @@
 			</ul>
 			<div class="pagination">
 					<ul class="pagination-list">
-						<li>
+						<li class="pagination-item-first">
 							<a class="pagination-button button-prev">Назад</a>
 						</li>
-						<li class="pagination-item pagination-item-current"><a>
-						1</a>
+						<li class="pagination-item pagination-item-current">
+							<a>1</a>
 						</li>
 						<li class="pagination-item">
-						<a href="#">2</a>
+							<a href="#">2</a>
 						</li>
 						<li class="pagination-item">
-						<a href="#">3</a>
+							<a href="#">3</a>
 						</li>
-						<li>
-						<a class="pagination-button button-next">Вперед</a>
+						<li class="pagination-item-last">
+							<a class="pagination-button button-next">Вперед</a>
 						</li>
 					</ul>
 			</div>
@@ -259,10 +266,19 @@
 					</div>
 					<div class="user-navigation-footer">
 						<ul>
-						<li><a class="login-link" href="account.html">Валентин Петухов</a></li>
-						 <li class="logout-link"><a href="logout.html">Выйти</a></li>
-						 <li><a class="compare-link" href="#">Сравнить</a></li>
-						 <li><a class="cart-link" href="#">Корзина</a></li>
+							<li>
+								<a class="login-link" href="account.html">Валентин Петухов
+								</a>
+							</li>
+							 <li class="logout-link">
+							 	<a href="logout.html">Выйти</a>
+							 </li>
+							 <li>
+							 	<a class="compare-link" href="#">Сравнить</a>
+							 </li>
+							 <li>
+							 	<a class="cart-link" href="#">Корзина</a>
+							 </li>
 						</ul>
 					</div>
 				</div>

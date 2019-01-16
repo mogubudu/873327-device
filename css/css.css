@@ -308,7 +308,8 @@ input[type="search"]:focus + .search-button {
 	margin: 0;
 }
 
-.main-navigation > ul > li > a {
+.main-navigation .category-link,
+.main-navigation .main-menu-link {
 	display: block;
 	font-family:  "Gilroy","Helvetica",sans-serif;
 	font-size: 18px;
@@ -319,16 +320,16 @@ input[type="search"]:focus + .search-button {
 	padding-bottom: 35px;
 }
 
-.main-navigation > ul > li:not(:first-of-type) {
+.main-navigation li {
 	margin-right: 35px;
 }
 
-.main-navigation > ul > li:last-of-type {
+.main-navigation .main-navigation-last-item {
 	margin-left: 73px;
 	margin-right: -5px;
 }
 
-.main-navigation > ul > li:first-of-type {
+.main-navigation .main-navigation-first-item {
 	margin-right: auto;
 	position: relative;
 }
@@ -361,17 +362,17 @@ input[type="search"]:focus + .search-button {
 	display: flex;
 }
 
-.main-category-navigation li ul {
+.main-category-navigation .main-category-navigation-hidden {
 	padding: 0;
 	margin: 0;
 	margin-right: 30px;
 }
 
-.main-category-navigation li ul:last-child {
+.main-category-navigation .main-category-navigation-hidden:last-child {
 	margin-right: 0;
 }
 
-.main-navigation ul > li:hover .main-category-navigation {
+li:hover .main-category-navigation {
 	visibility: visible;
 }
 
@@ -590,11 +591,11 @@ padding-left: 77px;
 	margin: 0;
 }
 
-.navigation-block ul li {
+.navigation-block li {
 	width: 160px;
 }
 
-.navigation-block ul li a {
+.navigation-block a {
 	display: block;
 }
 
@@ -616,28 +617,28 @@ padding-left: 77px;
 	background-position: center;
 }
 
-.navigation-block-item.vr::before {
+.vr::before {
 	background-image: url("../img/popular-1.svg");
 }
 
-.navigation-block-item.monopod::before {
+.monopod::before {
 	background-image: url("../img/popular-2.svg");
 	background-position-y: bottom;
 }
 
-.navigation-block-item.action-camera::before {
+.action-camera::before {
 	background-image: url("../img/popular-3.svg");
 }
 
-.navigation-block-item.fitness-bracelet::before {
+.fitness-bracelet::before {
 	background-image: url("../img/popular-4.svg");
 }
 
-.navigation-block-item.smart-watch::before {
+.smart-watch::before {
 	background-image: url("../img/popular-5.svg");
 }
 
-.navigation-block-item.quadcopters::before {
+.quadcopters::before {
 	background-image: url("../img/popular-6.svg");
 }
 
@@ -1067,11 +1068,7 @@ a:focus .navigation-block-item::before  {
 	        justify-content: space-between;
 }
 
-.user-navigation-footer ul li:first-of-type {
-	padding-left: 25px;
-}
-
-.user-navigation-footer ul li:not(:first-of-type) {
+.user-navigation-footer li {
 	margin-left: 33px;
 }
 
@@ -1081,11 +1078,11 @@ a:focus .navigation-block-item::before  {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.user-navigation-footer ul li.logout-link {
+.user-navigation-footer .logout-link {
 	margin-left: 22px;
 }
 
-.user-navigation-footer .logout-link a {
+.logout-link a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1167,7 +1164,8 @@ a:focus .navigation-block-item::before  {
 	opacity: 0.3;
 }
 
-.footer-social a, .footer-copyright a {
+.footer-social a, 
+.footer-copyright a {
 	font-size: 0;
 	display: block;
 	line-height: 0;
@@ -1425,19 +1423,19 @@ a:focus .navigation-block-item::before  {
 	display: none;
 }
 
-.breadcrumbs li a {
+.breadcrumbs a {
 	padding-right: 16px;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs li a:hover,
-.breadcrumbs li a:focus {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
 	color: rgba(0, 0, 0, 0.6);	
 }
 
-.breadcrumbs li a:active {
+.breadcrumbs a:active {
 	color: rgba(0, 0, 0, 0.1);	
 }
 
@@ -1526,7 +1524,7 @@ a:focus .navigation-block-item::before  {
 	font-weight: normal;
 }
 
-.sort-list .active a {
+.sort-list .active {
 	color: rgba(0, 0, 0, 1.0)
 }
 
@@ -1731,11 +1729,11 @@ a:focus .navigation-block-item::before  {
 	list-style: none;
 }
 
-.pagination-list li:first-child {
+.pagination-list .pagination-item-first {
 	margin-right: auto;
 }
 
-.pagination-list li:last-child {
+.pagination-list .pagination-item-last {
 	margin-left: auto;
 }
 
@@ -1814,11 +1812,11 @@ a:focus .navigation-block-item::before  {
 	margin: 0;
 }
 
-.catalog-filter ul li {
+.catalog-filter li {
 	margin-bottom: 17px;
 }
 
-.catalog-filter ul li:last-child {
+.catalog-filter li:last-child {
 	margin-bottom: 0;
 }
 
