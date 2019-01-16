@@ -181,16 +181,19 @@ a:active {
 	line-height: 30px;
 	padding: 8px 20px;
 	cursor: pointer;
-	visibility: hidden;
+	opacity: 0;
 }
 
-.form-search .search-button:hover {
+.form-search .search-button:hover,
+.form-search .search-button:focus,
+input[type="search"] + .search-button:hover {
 	background-color: #000;
 	color: #fff;
+	opacity: 1;
 }
 
 input[type="search"]:focus + .search-button {
-	visibility: visible;
+	opacity: 1;
 }
 
 .login-link {
@@ -951,6 +954,7 @@ a:focus .navigation-block-item::before  {
 	position: absolute;
 	z-index: 4;
 	background-color: #fff;
+	cursor: pointer;
 }
 
 .map img {
@@ -977,14 +981,14 @@ a:focus .navigation-block-item::before  {
 	position: relative;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background-color: #f0c52e;
 	color: #000;
 	cursor: pointer;
 }
 
-.button:hover:active,
-.button:hover:focus { 
+.button:active { 
 	color: rgba(0, 0, 0, 0.3)
 }
 
@@ -1205,6 +1209,8 @@ a:focus .navigation-block-item::before  {
 	position: fixed;
 	z-index: 999;
 	display: block;
+	-webkit-animation: popup-open 650ms ease-out;
+	        animation: popup-open 650ms ease-out;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -1215,6 +1221,40 @@ a:focus .navigation-block-item::before  {
 	transition: all 0.4s ease-in-out;
 	-webkit-box-sizing: content-box;
 	        box-sizing: content-box;
+}
+
+@-webkit-keyframes popup-open {
+	0% {
+		-webkit-transform: translate(-50%, 100%);
+		        transform: translate(-50%, 100%);
+	}
+
+	50% {
+		-webkit-transform: translate(-50%, -70%);
+		        transform: translate(-50%, -70%);
+	}
+
+	to {
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes popup-open {
+	0% {
+		-webkit-transform: translate(-50%, 100%);
+		        transform: translate(-50%, 100%);
+	}
+
+	50% {
+		-webkit-transform: translate(-50%, -70%);
+		        transform: translate(-50%, -70%);
+	}
+
+	to {
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
 }
 
 .modal-form {
@@ -1944,8 +1984,12 @@ a:focus .navigation-block-item::before  {
 	letter-spacing: -0.8px;
 }
 
+.filter-option input:focus + label,
+.filter-option input:focus + label,
 .filter-option label:hover,
-.filter-option label:focus {
+.filter-option label:hover::before,
+.filter-option label:focus,
+.filter-option label:focus::before {
 	opacity: 0.6;
 }
 
